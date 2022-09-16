@@ -40,7 +40,7 @@ if (localStorage.getItem("apiKey") === null){
 
 function key_press(key){
     let request = {
-        "queue": "ahK34NvA",
+        "queue": "key",
         "content": {
             "keyPress": key
         }
