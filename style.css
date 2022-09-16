@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body{
+    font-family: monospace;
+    text-align: center;
+}
+.bg-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-image: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+button{
+    font-size: 35px;
+    width: 110px;
+    height: 100px;
+}
+.keyboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 5px solid grey;
+    background-color: lightgray;
+    margin-top: 15%;
+}
+.Default{
+    border: 5px solid grey;
+    background-color: lightgray;
+    margin-top: 15%;
+}
+.tab-clsbrkt{
+    position: relative;
+    width: 100%;
+    left: 0%;
+}
+.a-apost{
+    position: relative;
+    width: 80%;
+    left: 9.65%;
+}
+.lshift-fstop{
+    position: relative;
+    width: 80%;
+    left: 9.65%;
+}
+.lcrtl-rctrl{
+    position: relative;
+    width: 70%;
+    left: 14.68%;
+}
+#tab{
+    width: 10%; 
+}
+#space{
+    width: 50.8%;
+}
+#main-text{
+    position: relative;
+    top: 20%;
+    font-size: 70px;
+}
+#game{
+    font-family: monospace;
+}

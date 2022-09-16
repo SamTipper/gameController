@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="keys.css">
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <div id="bg-container" class="bg-container">
+            <h1 id="main-text">Mess With My Game</h1>
+            <div class="keyboard">
+                <div class="container" id="container">
+                    <div class="esc-bkspce">
+                        <button id="esc" onclick="key_press('esc')">ESC</button>
+                        <button id="one" onclick="key_press('1')">1</button>
+                        <button id="two" onclick="key_press('2')">2</button>
+                        <button id="three" onclick="key_press('3')">3</button>
+                        <button id="four" onclick="key_press('4')">4</button>
+                        <button id="five" onclick="key_press('5')">5</button>
+                        <button id="six" onclick="key_press('6')">6</button>
+                        <button id="seven" onclick="key_press('7')">7</button>
+                        <button id="eight" onclick="key_press('8')">8</button>
+                        <button id="nine" onclick="key_press('9')">9</button>
+                        <button id="zero" onclick="key_press('0')">0</button>
+                        <button id="hyph" onclick="key_press('-')">-</button>
+                        <button id="equal" onclick="key_press('=')">=</button>
+                        <button id="bspce" onclick="key_press('backspace')">←</button><br>
+                    </div>
+                    <div class="tab-clsbrkt">
+                        <button id="tab" onclick="key_press('tab')">→|</button>
+                        <button id="q" onclick="key_press('q')">Q</button>
+                        <button id="w" onclick="key_press('w')">W</button>
+                        <button id="e" onclick="key_press('e')">E</button>
+                        <button id="r" onclick="key_press('r')">R</button>
+                        <button id="t" onclick="key_press('t')">T</button>
+                        <button id="y" onclick="key_press('y')">Y</button>
+                        <button id="u" onclick="key_press('u')">U</button>
+                        <button id="i" onclick="key_press('i')">I</button>
+                        <button id="o" onclick="key_press('o')">O</button>
+                        <button id="p" onclick="key_press('p')">P</button>
+                        <button id="obrkt" onclick="key_press('[')">[</button>
+                        <button id="cbrkt" onclick="key_press(']')">]</button><br>
+                    </div>
+                    <div class="a-apost">
+                        <button id="a" onclick="key_press('a')">A</button>
+                        <button id="s" onclick="key_press('s')">S</button>
+                        <button id="d" onclick="key_press('d')">D</button>
+                        <button id="f" onclick="key_press('f')">F</button>
+                        <button id="g" onclick="key_press('g')">G</button>
+                        <button id="h" onclick="key_press('h')">H</button>
+                        <button id="j" onclick="key_press('j')">J</button>
+                        <button id="k" onclick="key_press('k')">K</button>
+                        <button id="l" onclick="key_press('l')">L</button>
+                        <button id="scolon" onclick="key_press(';')">;</button>
+                        <button id="apost" onclick="key_press('\'')">'</button><br>
+                    </div>
+                    <div class="lshift-fstop">
+                        <button id="lshift" onclick="key_press('shift_l')">↑Shift</button>
+                        <button id="z" onclick="key_press('z')">Z</button>
+                        <button id="x" onclick="key_press('x')">X</button>
+                        <button id="c" onclick="key_press('c')">C</button>
+                        <button id="v" onclick="key_press('v')">V</button>
+                        <button id="b" onclick="key_press('b')">B</button>
+                        <button id="n" onclick="key_press('n')">N</button>
+                        <button id="m" onclick="key_press('m')">M</button>
+                        <button id="comma" onclick="key_press(',')">,</button>
+                        <button id="fstop" onclick="key_press('.')">.</button>
+                        <button id="rshift" onclick="key_press('shift_r')">Shift↑</button>
+                    </div> 
+                    <div class="lcrtl-rctrl">
+                        <button id="lctrl" onclick="key_press('ctrl_l')">CTRL</button>
+                        <button id="lalt" onclick="key_press('alt_l')">ALT</button>
+                        <button id="space" onclick="key_press('space')">───</button>
+                        <button id="ralt" onclick="key_press('alt_r')">ALT</button>
+                        <button id="rctrl" onclick="key_press('ctrl_l')">CTRL</button>
+                    </div>
+                    <div>
+                        <select id="game-select" class="game-select">
+                            <option>Default</option>
+                            <option id="et2">Euro Truck 2</option>
+                            <option id="minecraft">Minecraft</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/gameSelection.js"></script>
+    </body>
+</html>
