@@ -31,7 +31,7 @@ if (localStorage.getItem("apiKey") === null){
     HttpAuth.open("GET", "https://conga.coombszy.com/auth");
     HttpAuth.setRequestHeader("Authorization", localStorage.getItem("apiKey"));
     HttpAuth.send();
-    HttpAuth.onreadystatechange = function(){i
+    HttpAuth.onreadystatechange = function(){
         if (this.status !== 204){
             alert("API Key Outdated.")
             localStorage.removeItem("apiKey")
