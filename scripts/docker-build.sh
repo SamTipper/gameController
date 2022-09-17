@@ -10,3 +10,4 @@ docker buildx use builder
 
 # Run build
 docker buildx build -f docker/Dockerfile --platform linux/amd64,linux/arm/v7 --tag gamecontroller:latest .
+
