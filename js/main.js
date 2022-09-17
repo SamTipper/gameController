@@ -1,3 +1,5 @@
+let apiKey;
+
 const Http = new XMLHttpRequest();
     Http.open("GET", "https://conga.coombszy.com/health");
     Http.send();
@@ -10,7 +12,7 @@ const Http = new XMLHttpRequest();
 
 if (localStorage.getItem("apiKey") === null){
     const HttpAuth = new XMLHttpRequest();
-    const apiKey = prompt("Please Enter API Key");
+    apiKey = prompt("Please Enter API Key");
     if (apiKey == null){
         location.reload();
     }
@@ -36,11 +38,12 @@ if (localStorage.getItem("apiKey") === null){
             location.reload();
         }
     }
+    apiKey = localStorage.getItem("apiKey");
 }
 
 function key_press(key){
     let request = {
-        "queue": "key",
+        "queue": "key", // change this
         "content": {
             "keyPress": key
         }
